@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-   <p>>Привет редиска.</p>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <div class="header__logo-img">
+                            <a href="#">
+                                <img src="img/Logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="header__logo-text">
+                            <a href="#">
+                                Mart<span class="logo">Place</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__box">
+                        <a class="basket" href="#"></a>
+                        <a class="header__btn header__btn-login" href="">Login</a>
+                        <a class="header__btn header__btn-register" href="">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__down">
+            <div class="container">
+                <div class="header__down-menu">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a href="#">
+                                    HOME
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ALL PRODUCT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    WORDPRESS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FESTURES
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    PAGES
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__menu-search">
+                            <form>
+                                <input type="text" placeholder="Search product here..." required>
+                                <button type="submit">
+                                    <img src="img/icons/search.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
