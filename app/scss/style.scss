@@ -21,7 +21,7 @@
     margin-left: 5px;
   }
   .logo {
-    color: $blue;
+    color: $bluebutton;
   }
 }
 .header__btn {
@@ -33,18 +33,20 @@
 }
 .header__btn-login {
   background-color: #fff;
-  border: 1px solid $blue;
+  border: 1px solid $bluebutton;
   color: $blue;
   font-weight: 400;
 }
 .header__btn-register {
-  background-color: $blue;
+  background-color: $bluebutton;
   border: 1px solid #fff;
   color: #fff;
   font-weight: 400;
   margin-left: 5px;
 }
-
+.header__down {
+  margin-bottom: 18px;
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -56,41 +58,193 @@
       & + li {
         margin-left: 32px;
       }
-      a{
-          font-weight: 500;
-          font-size: 15px;
+      a {
+        font-weight: 500;
+        font-size: 15px;
       }
     }
   }
 }
-.header__menu-search{
-    max-width: 360px;
-    position: relative;
-    input{
-        display: block;
-        width: 100%;
-        border-radius: 20px;
-        height: 45px;
-        padding-left: 25px;
-        padding-right: 115px;
-        font-size: 15px;
-        font-weight: 400;
-        border: 1px solid #898f96;
-        outline: none;
-        &::placeholder{
-            color: #898f96;
-        }
+.header__menu-search {
+  max-width: 360px;
+  position: relative;
+  .header__menu-field {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 115px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #898f96;
+    outline: none;
+    &::placeholder {
+      color: #898f96;
     }
-    button{
-        position: absolute;
-        border-radius: 25px;
-        background-color: $blue;
-        right: -2px;
-        top: 0;
-        width: 70px;
-        height: 45px;
-        border: none;
-        outline: none;
-       
+  }
+  button {
+    position: absolute;
+    border-radius: 25px;
+    background-color: $bluebutton;
+    right: -2px;
+    top: 0;
+    width: 70px;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.promo {
+  min-height: 725px;
+  background-color: $blue;
+  color: #fff;
+  &__inner {
+    text-align: center;
+    padding: 183px 0 233px;
+
+    &-title {
+      font-size: 60px;
+      margin-bottom: 20px;
     }
+    &-subtitle {
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    &-text {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 70px;
+    }
+  }
+}
+.promo__inner-btn {
+  display: flex;
+  justify-content: center;
+  .promo__btn {
+    width: 190px;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 18px 28px;
+    font-size: 16px;
+  }
+  .promo__inner-all {
+    margin-right: 15px;
+    color: $blue;
+    background-color: #fff;
+  }
+  .promo__inner-popular {
+    margin-left: 15px;
+    color: #fff;
+  }
+}
+.search {
+  height: 70px;
+  margin-bottom: 185px;
+}
+.search__inner-form {
+  max-width: 1140px;
+  height: 135px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  margin-top: -70px;
+  z-index: 3;
+  position: relative;
+  .search__inner-fields {
+    display: flex;
+  }
+  .search__inner-field {
+    max-width: 615px;
+    width: 100%;
+    border: 1px solid #898f96;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 30px;
+    border-right: none;
+    height: 55px;
+    &::placeholder {
+      font-size: 16px;
+      color: $graytext;
+    }
+  }
+  .search__inner-filter {
+    height: 55px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: block;
+    width: 195px;
+    padding-left: 20px;
+    appearance: none;
+    background-image: url(../img/icons/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position-x: 165px;
+    background-position-y: center;
+  }
+  button {
+    max-width: 225px;
+    width: 100%;
+    height: 55px;
+    margin-left: 30px;
+    background-color: $bluebutton;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
+.field__background {
+  height: 135px;
+  border-radius: 6px;
+  opacity: 0.5;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+.field__one {
+  max-width: 1110px;
+  margin-top: -150px;
+  z-index: 2;
+}
+.field__two {
+  max-width: 1080px;
+  margin-top: -148px;
+  z-index: 1;
+}
+.advantages__inner {
+  display: flex;
+  justify-content: center;
+  .advantages__item {
+    width: 365px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+    }
+    &-img {
+      padding: 40px 0 40px;
+    }
+    &-title {
+      font-size: 24px;
+    }
+    &-text {
+      padding: 30px 35px 50px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 16px;
+    }
+  }
+  .responsive {
+    padding: 38px 0 35px;
+  }
 }
